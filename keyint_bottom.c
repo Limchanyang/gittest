@@ -115,7 +115,7 @@ static int __init mds2450_keyint_init(void)
 	// to register the key interrupt
 	if( request_irq( IRQ_EINT0, (void *)mds2450_keyevent, IRQF_DISABLED, DRV_NAME, &mds2450_gd) )   
     {
-        printk("failed to request external interrupt.\n");
+        printk("failed kildong to request external interrupt.\n");
         ret = -ENOENT;
         return ret;
     }
