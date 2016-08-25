@@ -1,5 +1,6 @@
+#Makefile
 obj-m := keysample.o
-#keysample-objs	:= keyint_base.o
+
 keysample-objs	:= keyint_bottom.o
 
 EXTRA_CFLAGS += -I./include
